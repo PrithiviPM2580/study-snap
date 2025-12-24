@@ -1,0 +1,30 @@
+{
+  "name": "studysnap",
+  "version": "1.0.0",
+  "description": "PrepGen AI is an AI-powered exam preparation platform that helps students quickly generate study notes, practice questions, and revision material based on their syllabus. It saves time, personalizes learning, and makes exam preparation easier and more effective.",
+  "private": "true",
+  "scripts": {
+    "lint:client": "cd client && biome lint --fix",
+    "lint:server": "cd server && biome lint --fix",
+    "check:client": "cd client && biome check",
+    "check:server": "cd server && biome check",
+    "check:all": "pnpm run check:client && pnpm run check:server",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "client/**/*.{js,ts,tsx,jsx,json,css,md}": [
+      "pnpm run lint:client"
+    ],
+    "server/**/*.{js,ts,json,css,md}": [
+      "pnpm run lint:server"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.2",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7"
+  }
+}
