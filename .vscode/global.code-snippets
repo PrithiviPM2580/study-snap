@@ -2,6 +2,19 @@
   "React Function Component": {
     "prefix": "rafcen",
     "body": [
+      "const ${TM_FILENAME_BASE} = () => {",
+      "    return (",
+      "        <div>$1</div>",
+      "    );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "React arrow function component using file name"
+  },
+  "React Function Props": {
+    "prefix": "rafcep",
+    "body": [
       "const ${TM_FILENAME_BASE} = (${1:props}) => {",
       "    return (",
       "        <div>$2</div>",
