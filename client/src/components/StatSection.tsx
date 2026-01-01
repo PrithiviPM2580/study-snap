@@ -1,5 +1,5 @@
 const StatSection = () => {
-  return <div>StatSection</div>;
+	return <div>StatSection</div>;
 };
 
 export default StatSection;
