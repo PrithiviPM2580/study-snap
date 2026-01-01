@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 const Home = () => {
 	return (
-		<section className="min-h-dvh py-30 sm:py-50 flex flex-col gap-4 md:gap-20">
+		<section className="min-h-dvh px-2 py-30 sm:py-50 flex flex-col gap-4 md:gap-20">
 			<div className="max-w-5xl mx-auto flex-center flex-col gap-3 sm:gap-8">
 				<div className="flex-center nav-container">
 					<div className="nav-circle flex-center">
@@ -42,7 +42,7 @@ const Home = () => {
 					</Button>
 				</div>
 			</div>
-			<div className="w-7xl h-[60vh] mx-auto bg-[#eeeeee] rounded-4xl"></div>
+			<div className="w-full sm:w-7xl h-[60vh] mx-auto bg-[#eeeeee] rounded-4xl"></div>
 		</section>
 	);
 };
