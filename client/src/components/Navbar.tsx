@@ -3,12 +3,12 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <header>
-      <nav>
-        <Link to="/">
-          <img src="./study.png" alt="Study Snap Logo" />
+    <header className="header">
+      <nav className="navs">
+        <Link to="/" className="link-img">
+          <img src="./svgs/study.svg" alt="Study Snap Logo" />
         </Link>
-        <Button asChild>
+        <Button asChild className="navbar-btn bg-study-snap-700  rounded-full">
           <Link to="/login">Dashboard</Link>
         </Button>
       </nav>
